@@ -1,0 +1,64 @@
+.headerLeftMenu {
+  position: fixed;
+  background-color: #fff;
+  flex-direction: column;
+  box-shadow: 4px 0 10px 0 rgba(0, 0, 0, 0.4);
+  will-change: transform;
+  width: 365px;
+  height: 100vh;
+  top: 0;
+  left: -365px;
+  z-index: 99;
+  transition: left 0.5s ease-in-out;
+}
+
+.header__menuOpened .headerLeftMenu {
+  left: 0;
+}
+
+.headerLeftMenu__header {
+  display: flex;
+  background-color: #232f3e;
+  height: 50px;
+  align-items: center;
+}
+
+.headerLeftMenu .headerLeftMenu__signOut {
+  height: 25px;
+  width: 27px;
+  margin-left: 33px;
+  margin-right: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.headerLeftMenu__header h3 {
+  margin: 0;
+  color: #fff;
+}
+
+.headerLeftMenu__categories h3 {
+  padding: 13px 20px 5px 36px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #111;
+  text-transform: capitalize;
+}
+
+.headerLeftMenu__categories p {
+  margin: 0;
+}
+.headerLeftMenu__categories p span {
+  padding: 13px 20px 13px 36px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  display: block;
+}
+
+.headerLeftMenu__categories p:hover {
+  background-color: #eaeded;
+}

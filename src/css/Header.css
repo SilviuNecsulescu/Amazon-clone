@@ -1,0 +1,177 @@
+.header * {
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #131a22;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__burger {
+  height: 40px;
+  margin: 10px 7px 10px 7px;
+  padding: 10px 8px 10px 8px;
+  display: flex;
+  font-size: 25px;
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid #666;
+  width: 38px;
+  text-decoration: none;
+}
+
+.header__burgerIcon {
+  background-position: -136px -255px;
+  width: 20px;
+  height: 18px;
+  background-image: url("../assets/amazon-sprite.png");
+  background-size: 350px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.header__logoContainer {
+  max-width: 165px;
+  width: 100%;
+}
+
+.header__logoLink {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header__logo {
+  background-image: url("../assets/amazon-sprite.png");
+  background-size: 350px;
+  background-position: -10px -51px;
+  width: 97px;
+  height: 30px;
+  background-repeat: repeat-x;
+  cursor: pointer;
+  display: inline-block;
+}
+.header__logoText {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 2px;
+  color: #fff;
+}
+
+.header__center {
+  display: flex;
+  flex: 1;
+  margin: 0 50px;
+}
+.header__search {
+  width: 100%;
+  line-height: 15px;
+  padding: 7px 10px 10px 10px;
+  margin: 0;
+  border: 0;
+  height: 40px;
+  font-size: 15px;
+  background: #fff;
+  color: #111;
+  outline: 0;
+  flex: 1;
+}
+
+.header__dropdown {
+  background-color: #f3f3f3;
+  padding-left: 10px !important;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.header__dropdown .MuiInput-underline:before,
+.header__dropdown .MuiInput-underline:hover:not(.Mui-disabled):before {
+  border: none;
+}
+
+.header__dropdown .MuiInput-root {
+  top: 5px;
+}
+
+.header__searchButton {
+  background-color: #febd69;
+  border: 0;
+  width: 45px;
+  background-position: 2px -280px;
+  background-image: url("../assets/amazon-sprite.png");
+  background-size: 350px;
+  color: #111;
+  font-size: 0;
+  height: 40px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+}
+
+.header__right {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__right a {
+  text-decoration: none;
+}
+
+.header__right > div {
+  margin-right: 20px;
+}
+.header__right > div > a > span {
+  display: block;
+}
+
+.header__right > div > a > span,
+.header__cartText {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header__right > div > a > span:first-child {
+  font-size: 12px;
+  line-height: 14px;
+  height: 14px;
+  font-weight: 400;
+}
+
+.header__cart {
+  position: relative;
+}
+
+.header__cart a > div > span:first-child {
+  position: absolute;
+  left: 16px;
+  right: auto;
+  top: -10px;
+  color: #f08804;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}
+
+.header__cart a {
+  display: flex;
+  align-items: baseline;
+}
+
+.header__cartIcon {
+  background-position: -10px -340px;
+  width: 38px;
+  height: 26px;
+  background-image: url("../assets/amazon-sprite.png");
+  background-size: 350px;
+  display: inline-block;
+}

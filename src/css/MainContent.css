@@ -1,0 +1,13 @@
+.mainContent__banner {
+  max-height: 300px;
+}
+.mainContent__banner img {
+  width: 100%;
+  margin-bottom: -300px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.mainContent__productsList {
+  max-width: 1200px;
+  margin: 30px auto;
+}
