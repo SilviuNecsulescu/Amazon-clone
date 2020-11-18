@@ -12,8 +12,9 @@ function SignIn() {
     ui.start(".signIn", {
       callbacks: {
         signInSuccessWithAuthResult: function (authResult, redirectUrl) {
-          dispatch(SET_USER(authResult.user.displayName));
+          //dispatch(SET_USER(authResult.user.displayName));
           history.push("/");
+          //console.log(authResult.user.displayName);
           return false;
         },
       },

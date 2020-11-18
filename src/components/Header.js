@@ -76,7 +76,7 @@ function Header({
       <div className="header__right">
         <div className="header__signin">
           <Link to="/signin">
-            <span>Hello, {user.length > 0 ? user.toString() : "sign in"}</span>
+            <span>Hello, {user?.length > 0 ? user.toString() : "sign in"}</span>
             <span>Account & Lists</span>
           </Link>
         </div>

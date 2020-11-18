@@ -8,6 +8,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProductDetails from "./components/ProductDetails";
 import Basket from "./components/Basket";
 import SignIn from "./components/SignIn";
+import { auth } from "./app/firebase";
+import { SET_USER } from "./features/user/userSlice";
+import { useDispatch } from "react-redux";
 
 function App() {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -15,6 +18,18 @@ function App() {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [dropDown, setDropDown] = useState("all");
   const [search, setSearch] = useState("");
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    auth.onAuthStateChanged((authUser) => {
+      console.log(authUser);
+      if (authUser) {
+        dispatch(SET_USER(authUser.displayName));
+      } else {
+        dispatch(SET_USER(null));
+      }
+    });
+  }, [dispatch]);
 
   useEffect(() => {
     const fetchData = async () =>

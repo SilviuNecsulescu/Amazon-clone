@@ -34,7 +34,7 @@ function HeaderLeftMenu({ products }) {
           className="headerLeftMenu__signOut"
           onClick={handleClick}
         />
-        <h3>Hello, {user.length > 0 ? user.toString() : "sign in"}</h3>
+        <h3>Hello, {user?.length > 0 ? user.toString() : "sign in"}</h3>
       </div>
       <div className="headerLeftMenu__categories">
         <h3>Categories</h3>
